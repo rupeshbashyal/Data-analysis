@@ -1,6 +1,7 @@
 SELECT name FROM sys.tables;
 
 use practiceDB
+
 select * from Students
 
 select * from Students where FirstName like 's%'
@@ -21,4 +22,20 @@ from Staff where Gender='Male' and Department='sales'
 --list the employee which has exprience of more than 5years
 
 select FirstName from Staff where (year(GETDATE()) - year(HireDate)) > 5
+
+
+--list of classes 
+select distinct class from Students
+
+
+
+select firstname, salary from staff order by Salary
+
+--list the employee names and hiredate in the order who has joined latest
+
+select FirstName,LastName,HireDate from Staff order by HireDate desc
+
+
+--aggration
+
 

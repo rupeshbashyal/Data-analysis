@@ -1,0 +1,11 @@
+use schooldb
+
+
+SELECT * FROM STUDENTS
+
+
+--DISPLAY THE STUDENTS WHOSE TOTAL IS 250
+SELECT STUDENT_NAME,(SUM(marks)) AS TOTAL FROM Students 
+GROUP BY student_name HAVING (SUM(marks)) >250;
+
+
