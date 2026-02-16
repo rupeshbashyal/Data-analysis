@@ -1,6 +1,6 @@
-SELECT name FROM sys.tables;
-
 use practiceDB
+
+SELECT name FROM sys.tables;
 
 select * from Students
 
