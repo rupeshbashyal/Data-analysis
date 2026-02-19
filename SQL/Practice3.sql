@@ -62,6 +62,35 @@ SELECT * FROM Projects;
 
 
 
+--list of employee joined before end of 2020 sep
+
+select * from employees 
+where hire_date <= '2020-08-01';
+
+
+
+
+--list the employee name with the employee id of 105,106,107,108,109
+
+select emp_id,first_name,last_name from Employees 
+where emp_id in (105,106,107,108,109);
+
+
+
+--list employees who has salary 50k to 60k
+
+select * from Employees
+where salary between 50000 and 60000;
+
+
+
+--list the employee with the name starting with s
+
+select * from Employees 
+where first_name like('s%');
+
+
+
 
 
 
