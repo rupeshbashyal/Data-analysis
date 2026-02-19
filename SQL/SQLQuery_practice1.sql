@@ -36,6 +36,39 @@ select firstname, salary from staff order by Salary
 select FirstName,LastName,HireDate from Staff order by HireDate desc
 
 
---aggration
+CREATE TABLE students (
+    id INT,
+    name VARCHAR(50),
+    city VARCHAR(50)
+);
+
+INSERT INTO students VALUES
+(1, 'Rupesh', 'Kathmandu'),
+(2, 'Sita', 'Pokhara'),
+(3, 'Ram', 'Butwal');
 
 
+-- Convert to uppercase
+SELECT UPPER(name) FROM students;
+
+-- Convert to lowercase
+SELECT LOWER(name) FROM students;
+
+-- Length of string
+SELECT LEN(name) FROM students;
+
+-- Combine text
+SELECT CONCAT(name, ' - ', city) AS details FROM students;
+
+-- Substring
+SELECT SUBSTRING(name,1,3) FROM students;
+
+
+--neumeric function
+
+SELECT ABS(-25);          -- absolute value
+SELECT CEILING(4.3);      -- round up
+SELECT FLOOR(4.9);        -- round down
+SELECT ROUND(45.678, 2);  -- round to 2 decimals
+SELECT POWER(2,3);        -- 2^3
+SELECT SQRT(64);          -- square root

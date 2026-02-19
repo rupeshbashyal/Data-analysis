@@ -22,3 +22,5 @@ from Staff where Gender='Male' and Department='sales'
 
 select FirstName from Staff where (year(GETDATE()) - year(HireDate)) > 5
 
+
+
